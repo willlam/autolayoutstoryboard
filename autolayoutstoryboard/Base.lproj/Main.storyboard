@@ -21,15 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-XB-MLF" userLabel="greenView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txk-xc-cBk" userLabel="purpleBox">
-                                        <rect key="frame" x="214" y="530" width="366" height="50"/>
-                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="quq-JI-0aT"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FV-3k-zhQ" userLabel="redBox">
-                                        <rect key="frame" x="340" y="25" width="240" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FV-3k-zhQ" userLabel="redBox">
+                                        <rect key="frame" x="430" y="20" width="150" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-XV-ecR" userLabel="orangeBoxLeft">
                                                 <rect key="frame" x="10" y="10" width="70" height="30"/>
@@ -39,8 +32,8 @@
                                                     <constraint firstAttribute="width" constant="70" id="xo4-8c-PVR"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INc-rQ-7Mb">
-                                                <rect key="frame" x="90" y="10" width="50" height="30"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INc-rQ-7Mb" userLabel="orangeBoxRight">
+                                                <rect key="frame" x="175" y="8" width="50" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="NOt-Tn-evW"/>
@@ -50,24 +43,35 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="E1u-Fv-Weg"/>
-                                            <constraint firstItem="INc-rQ-7Mb" firstAttribute="leading" secondItem="JZB-XV-ecR" secondAttribute="trailing" constant="10" id="EPY-en-qVw"/>
-                                            <constraint firstAttribute="trailing" secondItem="JZB-XV-ecR" secondAttribute="trailing" constant="162" id="SWK-zL-3Z4"/>
-                                            <constraint firstAttribute="trailing" secondItem="JZB-XV-ecR" secondAttribute="trailing" constant="140" id="TFK-8r-WYx"/>
-                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="leading" secondItem="7FV-3k-zhQ" secondAttribute="leading" constant="10" id="Vyq-gS-HcV"/>
-                                            <constraint firstItem="INc-rQ-7Mb" firstAttribute="leading" secondItem="JZB-XV-ecR" secondAttribute="trailing" constant="96" id="Wlf-vG-dxz"/>
-                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="centerY" secondItem="7FV-3k-zhQ" secondAttribute="centerY" id="eVQ-Mu-cyf"/>
-                                            <constraint firstAttribute="trailing" secondItem="INc-rQ-7Mb" secondAttribute="trailing" constant="16" id="erT-qz-BTa"/>
-                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="top" secondItem="7FV-3k-zhQ" secondAttribute="top" constant="10" id="l6k-95-sZQ"/>
-                                            <constraint firstAttribute="height" constant="50" id="lKN-MV-Wn8"/>
-                                            <constraint firstItem="INc-rQ-7Mb" firstAttribute="centerY" secondItem="7FV-3k-zhQ" secondAttribute="centerY" id="mQk-DJ-Bvm"/>
+                                            <constraint firstItem="INc-rQ-7Mb" firstAttribute="leading" secondItem="JZB-XV-ecR" secondAttribute="trailing" constant="10" id="5RS-9P-YMF"/>
+                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="leading" secondItem="7FV-3k-zhQ" secondAttribute="leading" constant="10" id="BxA-iR-zvC"/>
+                                            <constraint firstAttribute="width" constant="150" id="F96-id-XL3"/>
+                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="leading" secondItem="7FV-3k-zhQ" secondAttribute="leading" constant="10" id="Stu-CK-mvf"/>
+                                            <constraint firstAttribute="height" constant="50" id="Vpz-pK-Mm9"/>
+                                            <constraint firstItem="INc-rQ-7Mb" firstAttribute="leading" secondItem="7FV-3k-zhQ" secondAttribute="leading" constant="90" id="Yf7-yk-zPQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="JZB-XV-ecR" secondAttribute="bottom" constant="10" id="Z8f-O3-K8e"/>
+                                            <constraint firstAttribute="width" constant="240" id="gjg-TR-Tqj"/>
+                                            <constraint firstAttribute="bottom" secondItem="JZB-XV-ecR" secondAttribute="bottom" constant="10" id="taK-d8-c01"/>
+                                            <constraint firstItem="JZB-XV-ecR" firstAttribute="leading" secondItem="7FV-3k-zhQ" secondAttribute="leading" constant="10" id="ufH-VR-KZm"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="SWK-zL-3Z4"/>
-                                                <exclude reference="Wlf-vG-dxz"/>
+                                                <exclude reference="gjg-TR-Tqj"/>
+                                                <exclude reference="BxA-iR-zvC"/>
+                                                <exclude reference="Stu-CK-mvf"/>
+                                                <exclude reference="Z8f-O3-K8e"/>
+                                                <exclude reference="taK-d8-c01"/>
+                                                <exclude reference="ufH-VR-KZm"/>
+                                                <exclude reference="Yf7-yk-zPQ"/>
                                             </mask>
                                         </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txk-xc-cBk" userLabel="purpleBox">
+                                        <rect key="frame" x="214" y="530" width="366" height="50"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="quq-JI-0aT"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdF-bA-AUb" userLabel="topBlueBox">
                                         <rect key="frame" x="275" y="125" width="50" height="50"/>
@@ -96,18 +100,33 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.3197986115" green="1" blue="0.1977497989" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="INc-rQ-7Mb" firstAttribute="top" secondItem="Qew-XB-MLF" secondAttribute="top" constant="30" id="6Ba-xx-c8c"/>
                                     <constraint firstItem="zi8-qe-mQ2" firstAttribute="centerY" secondItem="Lzb-xP-uSg" secondAttribute="centerY" multiplier="1.5" id="6gj-TR-JNa"/>
+                                    <constraint firstItem="JZB-XV-ecR" firstAttribute="top" secondItem="Qew-XB-MLF" secondAttribute="top" constant="30" id="6gw-yL-bLQ"/>
                                     <constraint firstAttribute="trailing" secondItem="7FV-3k-zhQ" secondAttribute="trailing" constant="20" id="6pH-Ju-imT"/>
                                     <constraint firstAttribute="trailing" secondItem="Txk-xc-cBk" secondAttribute="trailing" constant="20" id="9fO-CQ-9uB"/>
                                     <constraint firstItem="7FV-3k-zhQ" firstAttribute="top" secondItem="Qew-XB-MLF" secondAttribute="top" constant="20" id="9ig-WN-uXa"/>
                                     <constraint firstItem="PdF-bA-AUb" firstAttribute="centerY" secondItem="Lzb-xP-uSg" secondAttribute="centerY" multiplier="0.5" id="JnM-0z-0nh"/>
+                                    <constraint firstItem="7FV-3k-zhQ" firstAttribute="top" secondItem="Qew-XB-MLF" secondAttribute="top" constant="20" id="KwW-RO-Dfd"/>
                                     <constraint firstAttribute="bottom" secondItem="Txk-xc-cBk" secondAttribute="bottom" constant="20" id="Qmk-QX-r4k"/>
+                                    <constraint firstAttribute="trailing" secondItem="7FV-3k-zhQ" secondAttribute="trailing" constant="20" id="SH0-V9-5kF"/>
                                     <constraint firstItem="zi8-qe-mQ2" firstAttribute="centerX" secondItem="Qew-XB-MLF" secondAttribute="centerX" id="UNe-K0-LCf"/>
+                                    <constraint firstAttribute="trailing" secondItem="INc-rQ-7Mb" secondAttribute="trailing" constant="30" id="Vyj-XU-qkm"/>
                                     <constraint firstItem="Lzb-xP-uSg" firstAttribute="centerY" secondItem="Qew-XB-MLF" secondAttribute="centerY" id="XG6-aI-hS3"/>
                                     <constraint firstItem="PdF-bA-AUb" firstAttribute="centerX" secondItem="Qew-XB-MLF" secondAttribute="centerX" id="afY-Sx-W8N"/>
                                     <constraint firstItem="Txk-xc-cBk" firstAttribute="width" secondItem="Qew-XB-MLF" secondAttribute="width" multiplier="0.61" id="fPg-BT-1vH"/>
+                                    <constraint firstAttribute="trailing" secondItem="7FV-3k-zhQ" secondAttribute="trailing" constant="20" id="k8z-wr-n9h"/>
+                                    <constraint firstItem="7FV-3k-zhQ" firstAttribute="centerY" secondItem="Qew-XB-MLF" secondAttribute="centerY" id="kng-Ig-MKg"/>
                                     <constraint firstItem="Lzb-xP-uSg" firstAttribute="centerX" secondItem="Qew-XB-MLF" secondAttribute="centerX" id="ogA-YU-D55"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6pH-Ju-imT"/>
+                                        <exclude reference="9ig-WN-uXa"/>
+                                        <exclude reference="k8z-wr-n9h"/>
+                                        <exclude reference="kng-Ig-MKg"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
